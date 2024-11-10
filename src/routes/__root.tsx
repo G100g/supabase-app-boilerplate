@@ -1,7 +1,7 @@
 import { createRootRoute, Link, Outlet } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/router-devtools";
 
-import "../App.css";
+import "../root.css";
 
 export const Route = createRootRoute({
   component: () => (
@@ -10,8 +10,8 @@ export const Route = createRootRoute({
         <Link to="/" className="[&.active]:font-bold">
           Home
         </Link>{" "}
-        <Link to="/about" className="[&.active]:font-bold">
-          About
+        <Link to="/signup" className="[&.active]:font-bold">
+          Signup
         </Link>
       </div>
       <hr />
