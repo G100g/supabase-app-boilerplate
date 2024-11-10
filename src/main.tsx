@@ -6,6 +6,7 @@ import { RouterProvider, createRouter } from "@tanstack/react-router";
 import { routeTree } from "./routeTree.gen";
 
 import "./index.css";
+import { SupabaseClientProvider } from "./hooks/supabase/useSupabaseSession";
 
 // Create a new router instance
 const router = createRouter({ routeTree });
